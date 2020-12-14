@@ -1,0 +1,710 @@
+.indexLeftNav{
+    float: left;
+    display: inline;
+    width: 220px;
+    height: 100%;
+    border-right: 1px solid #e0dfdf;
+    background-color: #ffffff;
+    position: relative;
+    z-index: 1000;
+    background-image: url(https://cdnimg.ocj.com.cn/common/webpc/image/imageindex/tcfff.png);
+    
+}
+.indexLeftNavBox{
+    width: 205px;
+    height: 39px;
+    padding: 0 0 0 15px;
+    cursor: pointer;
+    line-height: 39px;
+}
+.indexLeftNavBox:hover{
+    background-color: #afafaf;
+}
+.INB_L a:hover{
+    color: blue;
+    text-decoration: underline;
+} 
+
+
+
+.indexLeftNavBox:hover .indexNavBoxMask{
+    display: block;
+}
+
+.INB_L{
+    float: left;
+    padding: 0 30px;
+}
+.INB_L span{
+    font-weight: bold;
+}
+.INB_R{
+    float: left;
+}
+
+.indexLeftNavBoxBgContent{
+    width: 200px;
+    height: 39px;
+    margin: 0 auto;
+    border-bottom: 1px dotted #bdbdbd;
+    vertical-align: middle;
+    line-height: 39px;
+}
+
+.indexLeftNavBoxBg{
+    background-image: url(https://cdnimg.ocj.com.cn/common/webpc/image/imageindex/leftnavbg.png);
+    background-repeat: no-repeat;
+    padding: 0;
+    width: 220px;
+    height: 40px;
+}
+
+.indexLeftNavBoxBgContent img{
+    height: 22px;
+    width: auto;
+    margin-left: 39px;
+}
+
+.live-box{
+    width: 100%;
+    height: 90px;
+    position: relative;
+    background-color: #f3f3f3;
+   
+}
+
+.indexLeftNavShowConent{
+    float: left;
+    display: inline;
+    position: relative;
+    width: 969px;
+    height: 100%;
+    background: red;
+}
+
+.hIndexvideoNavChangeBox{
+    position: relative;
+    float: left;
+    display: inline;
+    width: 457px;
+    height: 84px;
+    background: fuchsia;
+    
+}
+
+.indexNavBoxMask{
+    width: 940px;
+    height: 590px;
+    background-color: #ffffff;
+    position: absolute;
+    left: 220px;
+    top: -2px;
+    border: 1px solid #e0dfdf;
+    border-right: 1px solid #ffffff;
+    
+    z-index: 10000;
+    display: none;
+}
+
+
+/* 轮播图效果 */
+.lunbo {
+    width: 790px;
+    height: 340px;
+    
+    margin: 20px auto;
+   position: relative;
+}
+
+.lunbo ul li {
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+}
+.lunbo ul li .lbb{
+    
+    position: absolute;
+    top: 90px;
+    left: -580px;
+    
+}
+.lunbo ul li .lbs{
+   
+    position: relative;
+    width: 250px;
+    position: absolute;
+    right: -1000px;
+    top: 90px;
+}
+
+.lunbo ol {
+    position: absolute;
+    left: 50px;
+    bottom: -200px;
+}
+
+.lunbo ol li {
+    float: left;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #ccc;
+    text-indent: -999em;
+    margin-right: 5px;
+}
+
+.lunbo ol li.active {
+    background: blue;
+}
+
+#left,
+#right {
+    position: absolute;
+    top: 90%;
+    margin-top: -60px;
+    color: #fff;
+    font-size: 100px;
+    text-decoration: none;
+}
+
+#left {
+    left: 20px;
+}
+
+#right {
+    right: 20px;
+}
+
+
+//主播推荐
+.TVLeftConent{
+    width: 418px;
+    height: 665px;
+    border: 1px solid #e8e6e6;
+    background: #ffffff;
+    float: left;
+}
+
+.TVRightConent{
+    width: 748px;
+    height: 666px;
+    float: left;
+    display: inline;
+    position: relative;
+    background: chartreuse;
+}
+
+.title{
+    font-size: 24px;
+    color: #424242;
+    padding-left: 10px;
+    padding-bottom: 13px;
+    border-bottom: 1px solid #424242;
+    margin-bottom: 10px;
+    position: relative;
+}
+.title span{
+    font-size: 16px;
+    color: #333;
+}
+
+.hItemShowImg{
+    width: 100%;
+    height: auto;
+}
+
+.boradcastRecommend{
+    padding: 15px 15px 24px;
+    border-top: 1px dotted #b2b2b2;
+    margin-top: 20px;
+}
+
+.boradcastRecommendText{
+    padding: 15px;
+    border: 1px solid #b2b2b2;
+    background-color: #f7f7f7;
+}
+
+.TVRightConentFloatItem{
+    float: left;
+    display: inline;
+    border: 1px solid #e8e6e6;
+    width: 220px;
+    height: 305px;
+    padding: 8px;
+    background: #ffffff;
+    margin-right: 11px;
+}
+
+.hItemShowImg>img{
+    width: 100%;
+    height: auto;
+    position: relative;
+    text-align: center;
+}
+//团购
+
+.groupLeftConent{
+    width: 418px;
+    height: 321px;
+    background: #ffffff;
+    float: left;
+}
+
+.groupRightConent{
+    width: 748px;
+    height: 321px;
+    background-color: aqua;
+    float: left;
+}
+.groupRightConentItem{
+    float: left;
+    display: inline;
+    border: 1px solid #e8e6e6;
+    width: 220px;
+    height: 305px;
+    padding: 8px;
+    background: #ffffff;
+    margin-right: 10px;
+}
+
+//全球购
+.globalLeftConent{
+    width: 418px;
+    height: 321px;
+    background: #ffffff;
+    float: left;
+}
+
+.globalRightConent{
+    width: 748px;
+    height: 321px;
+    background-color: palevioletred;
+    float: left;
+}
+
+
+//食品饮料
+.foodsLeft{
+    position: relative;
+    float: left;
+    display: inline;
+    width: 290px;
+    height: auto;
+}
+
+
+.foodsLeftConent{
+    width: 290px;
+    height: 237px;
+    position: relative;
+}
+
+.foodIconList{
+    float: left;
+    display: inline;
+    cursor: pointer;
+    border: 1px solid #e8e8e8;
+    width: 95px;
+    height: 117px;
+    border-top: none;
+    border-right: none;
+}
+
+.foodIconListImg{
+    height: 82px;
+    vertical-align: middle;
+    text-align: center;
+    position: relative;
+}
+
+.foodIconListImg img{
+    position: relative;
+    top: 50%;
+    margin-top: -10px;
+}
+.foodIconListText{
+    text-align: center;
+    font-size: 14px;
+    color: #2c2c2c;
+}
+
+.foodsRightConentItem{
+    float: left;
+    display: inline;
+    width: 220px;
+    background: #ffffff;
+    height: 280px;
+    margin: 0 0 5px 5px;
+    padding-bottom: 11px;
+}
+
+//商城优选
+
+.mo_Item {
+    width: 590px;
+    float: left;
+    margin-top: 10px;
+}
+
+
+.stbLogoImg{
+    float: left;
+    position: relative;
+    width: 250px;
+}
+.stbLogoLink{
+    display: block;
+    position: relative;
+    width: 250px;
+    height: 145px;
+}
+.stbcontbox{
+    position: absolute;
+    width: 90%;
+    top: 68px;
+    text-align: center;
+    margin: 1% 5%;
+    text-decoration: none;
+}
+.stbLogoBtn{
+    display: inline-block;
+    padding: 10px 3%;
+    text-align: center;
+    font-size: 16px;
+    color: #1c4976;
+    text-decoration: none;
+    border: 1px solid #1c4976; 
+}
+.stbLogoPrdTtl {
+    position: absolute;
+    top: 24px;
+    width: 100%;
+    text-align: center;
+    color: #000;
+    font-size: 20px;
+    font-family: "Microsoft YaHei", Arial, Helvetica, sans-serif;
+}
+.stbLogoPrd {
+    float: left;
+    position: relative;
+    width: 340px;
+    height: 145px;
+    background-color: #e9ecf0;
+}
+.stbLogoPrdBtn {
+    float: right;
+    margin-right: 15px;
+    margin-top: 15px;
+}
+.stbLogoPrdInfo {
+    float: right;
+    width: 170px;
+    margin-right: 15px;
+    margin-top: 40px;
+}
+.stbLogoPrdInfo .hItemShowTitle {
+    line-height: 18px;
+    height: 36px;
+    padding: 0 0 0 5px;
+    overflow: hidden;
+    font-size: 14px;
+    color: #2c2c2c;
+    text-align: left;
+    word-break: break-all;
+}
+.stbLogoPrdInfoLink {
+    display: inline-block;
+    font-size: 16px;
+    color: #ea0505;
+    text-align: left;
+    font-weight: bold;
+    font-family: "Arial";
+    margin-left: 4px;
+    margin-top: 5px;
+}
+
+//后三个商品
+.storeThemeItemList {
+    background-color: #fff;
+    padding: 20px 0 10px 0;
+}
+.stbListItem {
+    width: 170px;
+    float: left;
+    margin: 0 13px;
+    padding-bottom: 30px;
+    position: relative;
+}
+
+//猜你喜欢
+.hyouwilllikeItems {
+    padding: 4px;
+    width: 220px;
+    margin-right: 10px;
+    border: 1px solid #e8e6e6;
+    float: left;
+    display: inline;
+}
+
+.hCommonItem .hItemShowImg {
+    width: 100%;
+    height: auto;
+    position: relative;
+    text-align: center;
+}
+.hyouwilllikeItems .hCommonItem .hItemShowTitle {
+    line-height: 18px;
+    height: 36px;
+    margin: 4px 0 3px 0;
+    padding: 0 0 0 5px;
+    overflow: hidden;
+}
+.hCommonItem .hItemShowMoney {
+    font-size: 16px;
+    color: #ea0505;
+    text-align: left;
+    padding: 8px 0 0 0;
+    font-weight: bold;
+    font-family: "Arial";
+}
+.hCommonItem .hItemShowImg img {
+    width: 100%;
+    height: auto;
+}
+div.nomg {
+    margin: 0;
+}
+
+/* 东方公益 */
+.hindexProjectListBox {
+    margin-bottom: 30px;
+}
+.hindexhuiyuanConent {
+    margin-top: 78px;
+    position: relative;
+}
+.hindexhuiyuanConentShow {
+    width: 427px;
+    height: auto;
+    float: left;
+    display: inline;
+}
+.hindexhuiyuanBannerPlayer {
+    width: 427px;
+    height: 210px;
+    position: relative;
+    overflow: hidden;
+}
+.hindexhuiyuanConentShowIconList {
+    border: 1px solid #c2c2c2;
+    border-top: none;
+    height: 112px;
+    background-color: #ffffff;
+    padding-left: 14px;
+}
+.hindexhuiyuanConentShowIconListTitle {
+    font-size: 16px;
+    color: #636363;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    padding-left: 10px;
+}
+.hindexhuiyuanConentShowIconListItem {
+    width: 66px;
+    height: auto;
+    float: left;
+    display: inline;
+    cursor: pointer;
+}
+.hindexhuiyuanConentShowIconListItemImg {
+    width: 45px;
+    height: 45px;
+    margin: 0 auto;
+    position: relative;
+}
+.hindexhuiyuanConentShowIconListItemTitel {
+    text-align: center;
+    color: #424242;
+    font-size: 13px;
+    margin-top: 4px;
+}
+
+/* 公益右边 */
+.hindexhuiyuanConentShowNavtab {
+    position: relative;
+    float: left;
+    display: inline;
+    width: 750px;
+    height: auto;
+    margin-left: 10px;
+}
+.hindexhuiyuanConentShowNavtabBar {
+    border-bottom: 1px solid #424242;
+    padding-left: 33px;
+}
+.hindexhuiyuanConentShowNavtabBarButton.hfroce {
+    background-color: #f6f6f7;
+    padding-top: 0;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    -moz-border-radius-topleft: 5px;
+    -moz-border-radius-topright: 5px;
+    -webkit-border-top-left-radius: 5px;
+    -webkit-border-top-right-radius: 5px;
+    border: 1px solid #424242;
+    border-bottom: 1px solid #f6f6f7;
+    top: 1px;
+}
+.hindexhuiyuanConentShowNavtabBarButton {
+    float: left;
+    display: inline;
+    position: relative;
+    z-index: 1;
+    padding-top: 1px;
+    height: 48px;
+    line-height: 48px;
+    text-align: center;
+    border: 1px solid #f6f6f7;
+    border-bottom: none;
+    font-size: 16px;
+    cursor: pointer;
+    width: 149px;
+}
+.hindexhuiyuanConentShowNavtabBarButtonImg {
+    display: none;
+    position: absolute;
+    bottom: 0;
+    right: -15px;
+    width: 14px;
+    height: 37px;
+    font-size: 0;
+    overflow: hidden;
+    line-height: 0;
+}
+.hindexhuiyuanConentShowNavtabShowContentItem {
+    float: left;
+    display: inline;
+    width: 170px;
+    padding: 5px;
+    background-color: #ffffff;
+    margin-right: 10px;
+}
+.hCommonItem .hItemShowImg {
+    width: 100%;
+    height: auto;
+    position: relative;
+    text-align: center;
+}
+.hindexhuiyuanConentShowNavtabShowContentItem .hCommonItem .hItemShowTitle {
+    line-height: 18px;
+    height: 36px;
+    margin: 4px 0 3px 0;
+    padding: 0 0 0 5px;
+    overflow: hidden;
+}
+.hCommonItem .hItemShowDuihuanDel {
+    font-size: 14px;
+    color: #acacac;
+    padding-left: 5px;
+    margin-bottom: 2px;
+    margin-top: -2px;
+}
+.hCommonItem .hItemShowDuihuan {
+    font-size: 12px;
+    color: #ea0505;
+    padding-left: 5px;
+    margin-bottom: 5px;
+}
+div.nomg {
+    margin: 0;
+}
+.clear {
+    clear: both;
+    overflow: hidden;
+    font-size: 0;
+    line-height: 0;
+    height: 0;
+}
+.hindexhuiyuanConentShowIconListItemImg img {
+    width: 100%;
+    height: 100%;
+}
+
+/* footer */
+.footer{
+    margin-top: 20px;
+}
+
+.footer_top_l{
+    float: left;
+    width: 838px;
+}
+
+.footer_top_l .list{
+    width: 115px;
+    float: left;
+    margin-left: 20px;
+}
+
+.footer_top_l .title-1{
+    width: 30px;
+    height: 29px;
+    background-image: url(https://cdnimg.ocj.com.cn/common/webpc/image/imageindex/newflootimg0.png);
+}
+
+.footer_top_r{
+    float: left;
+    height: 147px;
+    width: 338px;
+    border: 1px solid #d9d9d9;
+    margin-left: 10px;
+}
+.footer_bot{
+    border-top: 3px solid #5c686e;
+    height: auto;
+    margin-top: 10px;
+    padding-top: 20px;
+    position: relative;
+}
+
+.logo-dfmz{
+    width: 170px;
+    height: 42px;
+    position: absolute;
+    left: 0;
+}
+.logo-dfmz img{
+    width: 126px;
+    height: 100%;
+}
+
+.textIntroFooter{
+    text-align: center;
+    color: #82888b;
+    font-size: 12px;
+    padding: 2px 0;
+}
+
+.g-footer-icon {
+    WIDTH: 100%;
+    PADDING-BOTTOM: 50px;
+}
+.g-footer-icon-content {
+    WIDTH: 100%;
+}
+.g-footer-icon-content-box {
+    WIDTH: 1120px;
+}
+.g-footer-icon-content-box UL {
+    FLOAT: left;
+    DISPLAY: inline;
+    PADDING-TOP: 14px;
+    PADDING-BOTTOM: 14px;
+}
+.g-footer-icon-content-box UL LI {
+    FLOAT: left;
+    DISPLAY: inline;
+    MARGIN-RIGHT: 15px;
+}
