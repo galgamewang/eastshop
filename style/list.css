@@ -1,3 +1,7 @@
+body{
+    background-color: #ffffff;
+}
+
 .list {
     width: 1160px;
     margin: 0 auto;
@@ -5,7 +9,7 @@
 }
 
 .list li {
-    width: 200px;
+    width: 160px;
     padding: 10px;
     float: left;
     margin: 0 10px 10px 0;
@@ -15,18 +19,116 @@
 }
 
 .list li p {
-    width: 200px;
+    width: 160px;
     height: 48px;
     line-height: 24px;
     overflow: hidden;
 }
 
 .list li img {
-    width: 200px;
-    height: 200px;
+    width: 160px;
+    height: auto;
     display: block;
+}
+
+.nav p{
+    height: 40px;
+    line-height: 40px;
 }
 
 .list li span {
    display: block;
+   color: red;
+}
+
+.lists{
+    width: 115px;
+    float: left;
+    margin-left: 20px;
+}
+.goods_main_l{
+    width: 198px;
+    float: left;
+}
+.k_a{
+    width: 198px;
+    border: 1px black solid;
+    float: left;
+}
+.goodslist{
+    /* float: left; */
+    width: 900px;
+    margin-left: 10px;
+}
+
+.k_a h3{
+    background: #f1f1f1;
+    font-size: 14px;
+    padding: 5px 0px 5px 10px ;
+    line-height: 20px;
+    border-bottom: #d7d7d7 1px solid;
+}
+
+
+
+.k_a ul li a{
+    display: block;
+    padding-left: 20px;
+    height: 24px;
+    line-height: 24px;
+}
+.k_a ul li a:hover{
+    color: blue;
+    font-weight: bold;
+}
+.typearea{
+    overflow: hidden;
+}
+
+.hot_sell h3{
+    background: #f1f1f1;
+    font-size: 14px;
+    padding: 5px 0 5px 11px;
+    line-height: 20px;
+    border-top: #239ee2 2px solid;
+}
+
+/* 筛选 */
+
+.goods_screen {
+border: #d7d7d7 1px solid;
+}
+.goods_screen h3{
+    width: 888px;
+    position: relative;
+    background: #f1f1f1;
+    font-size: 14px;
+    padding: 5px 0px 5px 10px;
+    line-height: 20px;
+    border-bottom: #d7d7d7 1px solid;
+}
+.goods_screen li{
+    padding: 10px 0px 10px 0px;
+    border-bottom: #bfbfbf 1px dotted;
+    position: relative;
+}
+.goods_screen h4{
+    width: 90px;
+    padding: 2px 5px 2px 5px;
+    height: 16px ;
+    line-height: 16px;
+    color: #4d4f53;
+    text-align: right;
+    float: left;
+    display: inline;
+}
+
+.unlimited{
+    float: left;
+    display: inline;
+    padding: 2px 5px 2px 5px ;
+    height: 16px;
+    line-height: 16px;
+    background: #005aa0;
+    color: #ffffff;
 }

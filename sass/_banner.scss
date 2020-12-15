@@ -1,3 +1,5 @@
+
+
 .indexLeftNav{
     float: left;
     display: inline;
@@ -192,7 +194,23 @@
     float: left;
     display: inline;
     position: relative;
-    background: chartreuse;
+    
+}
+
+.TVRightConentFloatItem ul{
+    width: 748px;
+}
+
+.TVRightConentFloatItem li{
+    width: 200px;
+    padding: 10px;
+    float: left;
+    margin: 0 10px 10px 0;
+    border: 1px solid #ccc;
+    height: 310px;
+    position: relative;
+    background-color: #fff;
+    margin-left: 10px;
 }
 
 .title{
@@ -232,7 +250,7 @@
     border: 1px solid #e8e6e6;
     width: 220px;
     height: 305px;
-    padding: 8px;
+    
     background: #ffffff;
     margin-right: 11px;
 }

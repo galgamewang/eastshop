@@ -8,6 +8,9 @@
     <title>用户注册-东方购物</title>
     <link rel="stylesheet" href="style/index.css">
     <link rel="stylesheet" href="fonts/font_2109583_ro5b5e6kmb/iconfont.css">
+    <link rel="stylesheet" href="style/registry.css">
+    <script src="script/tab.js"></script>
+    <script src="https://cdn.bootcdn.net/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 </head>
 <body>
     <!-- 置顶登录注册 -->
@@ -65,15 +68,49 @@
     </div>
 
     <!-- 注册 -->
-    <fieldset style="width:500px;margin:0 auto;">
-        <legend>用户注册</legend>
-        <form action="http://127.0.0.1/dashboard/eastshop/php/reg.php" method="post">
-            <p><label for="">用户名：</label><input type="text" name="username" id="username"><i></i></p>
-            <p><label for="">密　码：</label><input type="password" name="password"></p>
-            <p><label for="">邮　箱：</label><input type="text" name="email"></p>
-            <p><input type="submit" value="提交注册" name="submit" id="submit"></p>
-        </form>
-    </fieldset>
+    <div class="registry_main">
+        <div id="tab">
+            <div class="tab_title">
+                <ul>
+                    <li class="active"><a href="javascript:;">新用户注册</a></li>
+                    <li><a href="javascript:;">电视顾客注册</a></li>
+                    
+                </ul>
+    
+            </div>
+
+            <div class="tab_content">
+                <div class="item show">
+                    <fieldset style="width:500px;margin:0 auto;">
+                        <legend>用户注册</legend>
+                        <form action="http://127.0.0.1/dashboard/eastshop/php/reg.php" method="post">
+                            <p><label for="">用户名：</label><input type="text" name="username" id="username"><i></i></p>
+                            <p><label for="">密　码：</label><input type="password" name="password"></p>
+                            <p><label for="">邮　箱：</label><input type="text" name="email"></p>
+                            <p><input type="submit" value="提交注册" name="submit" id="submit"></p>
+                        </form>
+                    </fieldset>
+                </div>
+                <div class="item">
+                    <fieldset style="width:500px;margin:0 auto;">
+                        <legend>用户注册</legend>
+                        <form action="http://127.0.0.1/dashboard/eastshop/php/reg.php" method="post">
+                            <p><label for="">用户名：</label><input type="text" name="username" id="username"><i></i></p>
+                            <p><label for="">密　码：</label><input type="password" name="password"></p>
+                            <p><label for="">邮　箱：</label><input type="text" name="email"></p>
+                            <p><input type="submit" value="提交注册" name="submit" id="submit"></p>
+                        </form>
+                    </fieldset>
+                </div>
+                
+                
+            </div>
+        </div>
+
+
+    </div>
+
+    
 
 
     <!-- footer -->
