@@ -5,7 +5,7 @@
     $username.on('blur', function() {
         $.ajax({
             type: 'post',
-            url: 'http://127.0.0.1/dashboard/eastshop/php/reg.php',
+            url: 'http://10.31.161.117/dashboard/eastshop/php/reg.php',
             data: {
                 xingming: $username.val()
             }

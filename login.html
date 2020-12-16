@@ -6,8 +6,12 @@
     <meta name="keywords" content="登录东方购物,东方电视购物,积分,全国免费配送,全国免费退换,部分商品当天配送,MB,MARIE BONNE,GENIA,时装周,上海时装周,双十一、11.11、双11、5折、半价、第二件半价、加价购">
     <meta name="description" content="全国免费配送，全国免费退换，促销，团购，部分商品当天配送，周末暴杀，今日特卖 。">
     <title>登录东方购物-东方购物</title>
+    <meta name="referrer" content="no-referrer"/>
     <link rel="stylesheet" href="style/index.css">
+    <link rel="stylesheet" href="style/login.css">
     <link rel="stylesheet" href="fonts/font_2109583_ro5b5e6kmb/iconfont.css">
+    <script src="script/login.js"></script>
+    <script src="https://cdn.bootcdn.net/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 </head>
 <body>
     <!-- 置顶登录注册 -->
@@ -63,6 +67,43 @@
             <img src="https://cdnimg.ocj.com.cn/image_site/shop/conts/8021/6741/9941/11267/1_20201113172133_35.jpg" alt="">
         </div>
     </div>
+
+
+    <div class="main clearfix typearea">
+        <div class="lcol">
+            <div class="lunbo">
+                <ul>
+                    <li style="opacity: 1;"><img src="https://www.ocj.com.cn/image_site/shop/conts/421/761/1241/1441/1_20201112135253_81.jpg" alt=""></li>
+                    <li><img src="https://www.ocj.com.cn/image_site/shop/conts/421/761/1241/1441/1_20201112135155_57.jpg" alt=""></li>
+                    
+                </ul>
+                <ol>
+                    <li class="active">1</li>
+                    <li>1</li>
+                    
+                </ol>
+               
+            </div>
+        </div>
+        
+        <div class="rcol">
+
+            <fieldset style="width:500px;margin:0 auto;">
+                <!-- <legend>用户登录</legend> -->
+                <form action="" method="post">
+                    <p><label for="">用户名：</label>
+                    <br>    <input type="text" name="username" id="username"></p>
+                    <p><label for="">密　码：</label>
+                    <br>    <input type="password" name="password" id="password"></p>
+                    <p><input type="button" value="登录" id="login"><a href="registry.html">免费注册</a></p>
+                </form>
+            </fieldset>
+
+
+        </div>
+            
+    </div>
+
 
 
 
@@ -210,3 +251,73 @@
     </div>
 </body>
 </html>
+
+
+<script>
+    ! function($) {
+        const $lunbo = $('.lunbo');
+        const $piclist = $('.lunbo ul li');
+        const $btnlist = $('.lunbo ol li');
+        const $left = $('#left');
+        const $right = $('#right');
+        let $num = 0;
+        let $timer1 = null;
+        let $timer2 = null;
+        //1.小圆圈切换
+        $btnlist.on('mouseover', function() {
+            $num = $(this).index();
+            $timer1 = setTimeout(function() {
+                tabswitch()
+            }, 300);
+
+
+        });
+
+        $btnlist.on('mouseout', function() {
+            clearTimeout($timer1);
+        });
+
+        //2.左右箭头切换
+        $right.on('click', function() {
+            $num++;
+            if ($num > $btnlist.length - 1) {
+                $num = 0;
+            }
+
+            tabswitch()
+        });
+
+        $left.on('click', function() {
+            $num--;
+            if ($num < 0) {
+                $num = $btnlist.length - 1;
+            }
+
+            tabswitch()
+        });
+
+        function tabswitch() {
+            $btnlist.eq($num).addClass('active').siblings().removeClass('active');
+            $piclist.eq($num).stop(true).animate({
+                opacity: 1
+            }).siblings().stop(true).animate({
+                opacity: 0
+            });
+        }
+
+        //3.自动轮播
+        $timer2 = setInterval(function() {
+            $right.click();
+        }, 3000);
+
+        //4.鼠标控制定时器停止和开启。
+        $lunbo.hover(function() {
+            clearInterval($timer2);
+        }, function() {
+            $timer2 = setInterval(function() {
+                $right.click();
+            }, 3000);
+        });
+
+    }(jQuery);
+</script>

@@ -4,7 +4,7 @@ define(['jlazyload'], () => {
             //渲染+懒加载
             const $list = $('.TVRightConentFloatItem ul');
             $.ajax({
-                url: 'http://127.0.0.1/dashboard/eastshop/php/sidelist.php',
+                url: 'http://10.31.161.117/dashboard/eastshop/php/sidelist.php',
                 dataType: 'json'
             }).done(function(data) {
                 let $strhtml = '';

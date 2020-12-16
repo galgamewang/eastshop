@@ -178,8 +178,9 @@ input {
     margin-top: 10px;
     width: 300px;
     height: 50px;
-    background: rgba(183, 183, 183, 0.4);
+    /* background: rgba(183, 183, 183, 0.4); */
     line-height: 50px;
+    color: #7d8289;
 }
 
 .p-btn {
@@ -193,16 +194,17 @@ input {
     font-size: 20px;
     font-family: "微软雅黑";
     color: black;
-    margin-left: 50px;
+    /* margin-left: 50px; */
     border: 1px solid gray;
-    float: left;
+    
 }
 
 .p-btn a {
     display: block;
-    width: 100px;
-    height: 50px;
-    background-color: red;
+    WIDTH: 122px;
+    HEIGHT: 42px;
+    /* background-color: red; */
+    background: url(https://cdnimg.ocj.com.cn/common/theme/v1/images/shop/bg.button.4.gif);
     font-size: 16px;
     font-family: "微软雅黑";
     color: white;
@@ -221,4 +223,174 @@ input {
     right: 50px;
     top: 50px;
     border: 1px solid red;
+    /* background: url(https://cdnimg.ocj.com.cn/common/theme/v1/images/shop/bg.button.4.gif); */
+}
+
+body{
+    background: #fff;
+}
+
+.footer {
+    margin-top: 100px;
+}
+
+.p-price strong{
+    color: red;
+    font: 24px;
+}
+
+/* right box */
+
+.goodsinfo .right_box{
+    WIDTH: 210px;
+    FLOAT: right;
+    DISPLAY: inline;
+    POSITION: relative;
+    Z-INDEX: 600;
+}
+
+.score_box{
+    WIDTH: 100%;
+    POSITION: relative;
+}
+.score_box h3{
+    FONT-SIZE: 14px;
+    FONT-WEIGHT: bold;
+    HEIGHT: 20px;
+    LINE-HEIGHT: 20px;
+    COLOR: #333;
+}
+
+.score_box .score{
+    MARGIN: 0px;
+    PADDING: 0px;
+    HEIGHT: 90px;
+    FONT-SIZE: 32px;
+    COLOR: #505966;
+    FONT-FAMILY: Georgia;
+}
+
+.score_box .score em{
+    font-size: 64px;
+}
+
+.score_box .review{
+    POSITION: absolute;
+    BOTTOM: 30px;
+    RIGHT: 20px;
+    PADDING-LEFT: 16px;
+    BACKGROUND: url(https://cdnimg.ocj.com.cn/common/theme/v1/images/shop/bg.icon.3.gif) left center no-repeat;
+}
+
+.pv_shop_detail_item_list {
+    WIDTH: 188px;
+    PADDING: 10px;
+    BORDER: #e1e4e6 1px solid;
+}
+
+.pv_shop_detail_item_list H3 {
+    FONT-SIZE: 12px;
+    HEIGHT: 16px;
+    LINE-HEIGHT: 16px;
+    FONT-WEIGHT: normal;
+    COLOR: #333;
+}
+
+.pv_shop_detail_item {
+    WIDTH: 100%;
+    PADDING: 10px 0px 10px 0px;
+    BORDER-BOTTOM: #c9c9c9 1px dotted;
+}
+.pv_shop_detail_item DIV.picture {
+    WIDTH: 58px;
+    HEIGHT: 58px;
+    FLOAT: left;
+    DISPLAY: inline;
+    BORDER: #e1e4e6 1px solid;
+}
+.pv_shop_detail_item DIV.info {
+    WIDTH: 118px;
+    PADDING: 0px 0px 0px 10px;
+    FLOAT: right;
+    DISPLAY: inline;
+}
+.item1 P.title {
+    font-size: 12px;
+    MARGIN: 2px 0px 2px 0px;
+    HEIGHT: 32px;
+    LINE-HEIGHT: 16px;
+    OVERFLOW: hidden;
+}
+.item1 P {
+    MARGIN: 0px;
+    PADDING: 0px;
+    POSITION: relative;
+}
+.item1 P.price EM {
+    FONT-SIZE: 14px;
+    FONT-STYLE: normal;
+    FONT-WEIGHT: bold;
+    COLOR: #e40000;
+}
+
+.pv_shop_detail_item DIV.picture IMG {
+    WIDTH: 58px;
+    HEIGHT: 58px;
+}
+.pv_shop_detail_item_more {
+    WIDTH: 100%;
+    MARGIN-TOP: -1px;
+    TEXT-ALIGN: center;
+    BACKGROUND: #fff;
+}
+.pv_shop_detail_item_more A {
+    DISPLAY: inline-block;
+    ZOOM: 1;
+    WIDTH: 112px;
+    HEIGHT: 32px;
+    LINE-HEIGHT: 30px;
+    BACKGROUND: url(https://cdnimg.ocj.com.cn/common/theme/v1/images/shop/bg.button.1.gif);
+    FONT-WEIGHT: bold;
+    COLOR: #505966;
+    TEXT-ALIGN: center;
+}
+
+.score_box P.star {
+    POSITION: absolute;
+    BOTTOM: 10px;
+    RIGHT: 30px;
+}
+.score_box P.star SPAN {
+    DISPLAY: block;
+    WIDTH: 64px;
+    HEIGHT: 14px;
+    BACKGROUND: url(https://cdnimg.ocj.com.cn/common/theme/v1/images/bg.star.1.1.gif) left center no-repeat;
+}
+.score_box P.star SPAN EM {
+    DISPLAY: block;
+    HEIGHT: 14px;
+    BACKGROUND: url(https://cdnimg.ocj.com.cn/common/theme/v1/images/bg.star.1.2.gif) left center no-repeat;
+}
+
+.ordqty{
+    margin-left: 50px;
+    PADDING-BOTTOM: 10px;
+}
+
+.ordqty span{
+    color: #7d8289;
+}
+
+.joincar{
+    margin-left: 50px;
+    PADDING-TOP: 15px;
+    PADDING-BOTTOM: 15px;
+    BORDER-TOP: #bac1c5 1px solid;
+    BORDER-BOTTOM: #bac1c5 1px solid;
+}
+
+.ordqty button{
+    height: 46px;
+    width: 46px;
+    font-size: 20px;
 }

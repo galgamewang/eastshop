@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    
+    <meta name="referrer" content="no-referrer"/>
     <link rel="stylesheet" href="style/index.css">
     <link rel="stylesheet" href="fonts/font_2109583_ro5b5e6kmb/iconfont.css"> 
-    <link rel="stylesheet" href="css/detail.css">
+    <link rel="stylesheet" href="style/detail.css">
     <script src="https://cdn.bootcdn.net/ajax/libs/require.js/2.3.6/require.min.js" defer async=true data-main="script/main.js" id="currentpage" data-origin="detail_module"></script>
 </head>
 <body>
@@ -59,7 +59,7 @@
             </div>
             <div class="cart">
                 <span class="iconfont icon-gouwuche"></span>
-                <a href="#">购物车</a>
+                <a href="cart.html">购物车</a>
                 <span class="iconfont icon-xiala"></span>
             </div>
             <img src="https://cdnimg.ocj.com.cn/image_site/shop/conts/8021/6741/9941/11267/1_20201113172133_35.jpg" alt="">
@@ -81,16 +81,16 @@
     </div>
 
 
-
+    
     
 
 
 
     <!-- 商品详情 -->
-    <div class="goodsinfo typearea">
-        <div class="box">
+    <div class="goodsinfo typearea clearfix">
+        <!-- <div class="box">
             <a href="cart.html" target="_blank">进入购物车</a>
-        </div>
+        </div> -->
         <div class="wrap">
             <div id="spic">
                 <img src="" alt="" id="smallpic">
@@ -110,16 +110,85 @@
             </div>
         </div>
         <div class="goodsinfo-word">
+
+           
+
+
+
+
             <div class="p-name">
                 <a class="loadtitle" href="##"></a>
             </div>
-            <div class="p-price"><strong><em>￥</em><i class="loadpcp"></i></strong></div>
+            <div class="p-price"><span>促销价</span><strong><em>￥</em><i class="loadpcp"></i></strong></div>
             <div class="p-btn">
-                <input type="text" id="count" value="1" />
-                <a href="javascript:;">加入购物车</a>
+
+                <div class="clearfix ordqty">
+                    <span>数量</span>
+                    <button class="quantity-down">-</button>
+                    <input type="text" id="count" value="1" />
+                    <button class="quantity-add">+</button>
+                </div>
+               
+                <div class="clearfix joincar">
+                    <a href="javascript:;">加入购物车</a>
+                </div>
+                
                 <!-- void(0) -->
             </div>
         </div>
+
+
+        <!-- right box -->
+        <div class="right_box">
+	
+            <div class="score_box">
+              <h3>商品评价</h3>
+              <p class="score"><em>5</em>.0</p>
+              <p class="review"><a>34条评价</a></p>
+              <p class="star"><span><em style="width:67px"></em></span></p>
+            </div>
+           
+                    <div class="pv_shop_detail_item_list">
+                      <h3>摩飞(MORPHY RICHARDS) 热卖商品</h3>
+                      
+                          <div class="pv_shop_detail_item">
+                            <div class="picture"><a href="/detail/17120377" title="[商城]摩飞（Morphyrichards）电水壶热水壶保温壶便携式旅行家用保温杯烧水壶 MR6060" target="_blank"><img class="lazy" src="https://cdnimg.ocj.com.cn/item/product/2020/11/main_1605338469244_217S.jpg" onerror="this.src='http://cdnimg.ocj.com.cn/item_images/imageS.jpg'" alt="[商城]摩飞（Morphyrichards）电水壶热水壶保温壶便携式旅行家用保温杯烧水壶 MR6060" title="[商城]摩飞（Morphyrichards）电水壶热水壶保温壶便携式旅行家用保温杯烧水壶 MR6060"></a></div>
+                            <div class="item1 info" mark="hover" hover_class="item1_on">
+                              <p class="title"><a href="/detail/17120377" title="[商城]摩飞（Morphyrichards）电水壶热水壶保温壶便携式旅行家用保温杯烧水壶 MR6060" target="_blank">[商城]摩飞（Morphyrichards）电水壶热水壶保温壶便携式旅行家用保温杯烧水壶 MR6060</a></p>
+                              
+                                      <p class="price">￥<em>239</em></p>
+                                  
+                            </div>
+                            <div class="clear"></div>
+                          </div>
+                      
+                          <div class="pv_shop_detail_item">
+                            <div class="picture"><a href="/detail/17119864" title="摩飞（Morphyrichards）冰箱除味器 空气净化器净味保鲜四合一 MR2060" target="_blank"><img class="lazy" src="https://cdnimg.ocj.com.cn/item/product/2020/11/main_1604987328372_965S.jpg" onerror="this.src='http://cdnimg.ocj.com.cn/item_images/imageS.jpg'" alt="摩飞（Morphyrichards）冰箱除味器 空气净化器净味保鲜四合一 MR2060" title="摩飞（Morphyrichards）冰箱除味器 空气净化器净味保鲜四合一 MR2060"></a></div>
+                            <div class="item1 info" mark="hover" hover_class="item1_on">
+                              <p class="title"><a href="/detail/17119864" title="摩飞（Morphyrichards）冰箱除味器 空气净化器净味保鲜四合一 MR2060" target="_blank">摩飞（Morphyrichards）冰箱除味器 空气净化器净味保鲜四合一 MR2060</a></p>
+                              
+                                      <p class="price">￥<em>299</em></p>
+                                  
+                            </div>
+                            <div class="clear"></div>
+                          </div>
+                      
+                          <div class="pv_shop_detail_item">
+                            <div class="picture"><a href="/detail/17119832" title="摩飞（Morphyrichards）烘被机暖被机被子烘干机家用便携式速干衣机 MR2070" target="_blank"><img class="lazy" src="https://cdnimg.ocj.com.cn/item/product/2020/11/main_1604979420770_414S.jpg" onerror="this.src='http://cdnimg.ocj.com.cn/item_images/imageS.jpg'" alt="摩飞（Morphyrichards）烘被机暖被机被子烘干机家用便携式速干衣机 MR2070" title="摩飞（Morphyrichards）烘被机暖被机被子烘干机家用便携式速干衣机 MR2070"></a></div>
+                            <div class="item1 info" mark="hover" hover_class="item1_on">
+                              <p class="title"><a href="/detail/17119832" title="摩飞（Morphyrichards）烘被机暖被机被子烘干机家用便携式速干衣机 MR2070" target="_blank">摩飞（Morphyrichards）烘被机暖被机被子烘干机家用便携式速干衣机 MR2070</a></p>
+                              
+                                      <p class="price">￥<em>439</em></p>
+                                  
+                            </div>
+                            <div class="clear"></div>
+                          </div>
+                      
+                          <div class="pv_shop_detail_item_more"><a href="/brands/detail/0712200" target="_blank">该品牌全部商品</a></div>
+                      
+                    </div>
+                  
+       </div>
     </div>
 
 

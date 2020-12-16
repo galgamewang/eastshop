@@ -12,30 +12,33 @@ li {
 }
 
 #tab {
-    width: 300px;
+    width: 1190px;
     height: 170px;
     border: 1px solid #ccc;
     margin: 20px auto 0;
 }
 
 #tab .tab_title {
-    height: 36px;
+    height: 70px;
     line-height: 36px;
-    background: #ccc;
+    background:#239cdc;
 }
 
 #tab .tab_title li {
     float: left;
-    width: 60px;
+    width: 204px;
     text-align: center;
+    margin-top: 34px;
 }
 
 #tab .tab_title li.active {
-    background: red;
+    background: #f7f7f7;
 }
 
 #tab .tab_content {
     padding: 10px;
+    height: 515px;
+    background:#f7f7f7;
 }
 
 #tab .tab_content .item {
@@ -48,4 +51,8 @@ li {
 
 #tab .tab_content .show {
     display: block;
+}
+
+.footer{
+    margin-top: 515px;
 }
