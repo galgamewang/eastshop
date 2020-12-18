@@ -11,16 +11,16 @@
     <link rel="stylesheet" href="fonts/font_2109583_ro5b5e6kmb/iconfont.css">
     <link rel="stylesheet" href="style/registry.css">
     
-    
+    <script src="https://cdn.bootcdn.net/ajax/libs/require.js/2.3.6/require.min.js" defer async=true data-main="script/main.js" id="currentpage" data-origin="registry_module"></script>
 </head>
 <body>
     <!-- 置顶登录注册 -->
     <div class="top">
         <div class="typearea">
             <div class="top_left">
-                <span>欢迎光临 OCJ.COM.CN</span>
-                <a href="#">登录</a>
-                <a href="#">注册</a>
+                <span><a href="http://10.31.161.117/dashboard/eastshop/">欢迎光临 OCJ.COM.CN</a></span>
+                <a href="http://10.31.161.117/dashboard/eastshop/login.html">登录</a>
+                <a href="http://10.31.161.117/dashboard/eastshop/registry.html">注册</a>
                 <span class="iconfont icon-dingweiweizhi"></span>
                 <span>上海</span>
                 <span>[更换]</span>
@@ -61,7 +61,7 @@
             </div>
             <div class="cart">
                 <span class="iconfont icon-gouwuche"></span>
-                <a href="#">购物车</a>
+                <a href="http://10.31.161.117/dashboard/eastshop/cart.html">购物车</a>
                 <span class="iconfont icon-xiala"></span>
             </div>
             <img src="https://cdnimg.ocj.com.cn/image_site/shop/conts/8021/6741/9941/11267/1_20201113172133_35.jpg" alt="">
@@ -80,32 +80,57 @@
     
             </div>
 
-            <div class="tab_content">
+
+            <div class="tab_box">
+
+                <div class="tab_content">
                 <div class="item show">
-                    <fieldset style="width:500px;margin:0 auto;">
-                        <legend>用户注册</legend>
-                        <form action="http://10.31.161.117/dashboard/eastshop/php/reg.php" method="post">
-                            <p><label for="">用户名：</label><input type="text" name="username" id="username"><i></i></p>
-                            <p><label for="">密　码：</label><input type="password" name="password"></p>
-                            <p><label for="">邮　箱：</label><input type="text" name="email"></p>
-                            <p><input type="submit" value="提交注册" name="submit" id="submit"></p>
+                    <fieldset style="width:600px;margin:0 auto;">
+                        <legend><img src="https://www.ocj.com.cn/common/theme/v1/images/passport/regist_mobile_icon.png" width="30" height="40">新用户注册</legend>
+                        <form action="http://10.31.161.117/dashboard/eastshop/php/reg.php" method="post" class="form1">
+                            <p><label for="">用户姓名：</label><input type="text" name="username"><span></span></p>
+                            <p><label for="">手机号码：</label><input type="text" name="tel"><span></span></p>
+                            <p><label for="">用户密码：</label><input type="password" name="password"><span></span></p>
+                            <p><label for="">用户邮箱：</label><input type="text" name="email"><span></span></p>
+                            <p><input type="submit" value="提交注册" name="submit" class="submit"></p>
                         </form>
                     </fieldset>
                 </div>
                 <div class="item">
-                    <fieldset style="width:500px;margin:0 auto;">
-                        <legend>用户注册</legend>
-                        <form action="http://10.31.161.117/dashboard/eastshop/php/reg.php" method="post">
-                            <p><label for="">手机号码：</label><input type="text" name="username" id="username"><i></i></p>
-                            <p><label for="">密　码：</label><input type="password" name="password"></p>
-                            <p><label for="">邮　箱：</label><input type="text" name="email"></p>
-                            <p><input type="submit" value="提交注册" name="submit" id="submit"></p>
+                    <fieldset style="width:600px;margin:0 auto;">
+                        <legend><img src="https://www.ocj.com.cn/common/theme/v1/images/passport/regist_television_icon.png" width="45" height="40">电视顾客注册</legend>
+                        <form action="http://10.31.161.117/dashboard/eastshop/php/reg.php" method="post" class="form1"">
+                            <p><label for="">用户姓名：</label><input type="text" name="username"><span></span></p>
+                            <p><label for="">手机号码：</label><input type="text" name="tel"><span></span></p>
+                            <p><label for="">用户密码：</label><input type="password" name="password"><span></span></p>
+                            <p><label for="">用户邮箱：</label><input type="text" name="email"><span></span></p>
+                            <p><input type="submit" value="提交注册" name="submit" class="submit"></p>
                         </form>
                     </fieldset>
-                </div>
+                </div>  
                 
+                <div class="rightbar">
+
+                    <div class="qrcode_box">
+                        <p class="txt_info txt_info1">扫一扫，关注我们</p>
+                        <div class="port"><img src="https://www.ocj.com.cn/common/theme/v1/images/passport/regist_nv_qrcode1.jpg" width="142" height="142"></div>
+                        <p class="txt_info txt_info2">微信服务号：OCJ_FW<br>关注并绑定账户送5元积分</p>
+                        <div class="port"><img src="https://www.ocj.com.cn/common/theme/v1/images/passport/regist_nv_qrcode2.jpg" width="142" height="142"></div>
+                        <p class="txt_info txt_info3">下载移动客户端<br>新人首购TV商品最高减200元</p>
+                      </div>
+
+                </div>
+
+                </div>
+
                 
             </div>
+
+
+            
+
+
+
         </div>
 
 
@@ -259,6 +284,3 @@
 
 </body>
 </html>
-<script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<script src="script/registry.js"></script>
-<script src="script/tab.js"></script>

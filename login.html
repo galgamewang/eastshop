@@ -10,17 +10,18 @@
     <link rel="stylesheet" href="style/index.css">
     <link rel="stylesheet" href="style/login.css">
     <link rel="stylesheet" href="fonts/font_2109583_ro5b5e6kmb/iconfont.css">
-    <script src="script/login.js"></script>
-    <script src="https://cdn.bootcdn.net/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+    <script src="https://cdn.bootcdn.net/ajax/libs/require.js/2.3.6/require.min.js" defer async=true data-main="script/main.js" id="currentpage" data-origin="login_module"></script>
+    
 </head>
 <body>
     <!-- 置顶登录注册 -->
     <div class="top">
         <div class="typearea">
             <div class="top_left">
-                <span>欢迎光临 OCJ.COM.CN</span>
-                <a href="#">登录</a>
-                <a href="#">注册</a>
+                <span><a href="http://10.31.161.117/dashboard/eastshop/">欢迎光临 OCJ.COM.CN</a></span>
+                <a href="http://10.31.161.117/dashboard/eastshop/login.html">登录</a>
+                <a href="http://10.31.161.117/dashboard/eastshop/registry.html">注册</a>
                 <span class="iconfont icon-dingweiweizhi"></span>
                 <span>上海</span>
                 <span>[更换]</span>
@@ -61,7 +62,7 @@
             </div>
             <div class="cart">
                 <span class="iconfont icon-gouwuche"></span>
-                <a href="#">购物车</a>
+                <a href="http://10.31.161.117/dashboard/eastshop/cart.html">购物车</a>
                 <span class="iconfont icon-xiala"></span>
             </div>
             <img src="https://cdnimg.ocj.com.cn/image_site/shop/conts/8021/6741/9941/11267/1_20201113172133_35.jpg" alt="">
@@ -91,11 +92,19 @@
             <fieldset style="width:500px;margin:0 auto;">
                 <!-- <legend>用户登录</legend> -->
                 <form action="" method="post">
-                    <p><label for="">用户名：</label>
-                    <br>    <input type="text" name="username" id="username"></p>
-                    <p><label for="">密　码：</label>
-                    <br>    <input type="password" name="password" id="password"></p>
-                    <p><input type="button" value="登录" id="login"><a href="registry.html">免费注册</a></p>
+                    <p><label for="">登录名：</label>
+
+                    <br><br>   <input type="text" name="username" id="username" placeholder="用户名" class="hock"></p>
+
+                    <p>
+                        <br><label for="">密　码：</label>
+
+                    <br><br>   <input type="password" name="password" id="password" class="hock"></p>
+                    
+
+                    <p><input type="button" value="登录" id="login" >
+
+                    <br>   <br> <a href="http://10.31.161.117/dashboard/eastshop/registry.html">免费注册</a></p>
                 </form>
             </fieldset>
 
@@ -253,71 +262,3 @@
 </html>
 
 
-<script>
-    ! function($) {
-        const $lunbo = $('.lunbo');
-        const $piclist = $('.lunbo ul li');
-        const $btnlist = $('.lunbo ol li');
-        const $left = $('#left');
-        const $right = $('#right');
-        let $num = 0;
-        let $timer1 = null;
-        let $timer2 = null;
-        //1.小圆圈切换
-        $btnlist.on('mouseover', function() {
-            $num = $(this).index();
-            $timer1 = setTimeout(function() {
-                tabswitch()
-            }, 300);
-
-
-        });
-
-        $btnlist.on('mouseout', function() {
-            clearTimeout($timer1);
-        });
-
-        //2.左右箭头切换
-        $right.on('click', function() {
-            $num++;
-            if ($num > $btnlist.length - 1) {
-                $num = 0;
-            }
-
-            tabswitch()
-        });
-
-        $left.on('click', function() {
-            $num--;
-            if ($num < 0) {
-                $num = $btnlist.length - 1;
-            }
-
-            tabswitch()
-        });
-
-        function tabswitch() {
-            $btnlist.eq($num).addClass('active').siblings().removeClass('active');
-            $piclist.eq($num).stop(true).animate({
-                opacity: 1
-            }).siblings().stop(true).animate({
-                opacity: 0
-            });
-        }
-
-        //3.自动轮播
-        $timer2 = setInterval(function() {
-            $right.click();
-        }, 3000);
-
-        //4.鼠标控制定时器停止和开启。
-        $lunbo.hover(function() {
-            clearInterval($timer2);
-        }, function() {
-            $timer2 = setInterval(function() {
-                $right.click();
-            }, 3000);
-        });
-
-    }(jQuery);
-</script>

@@ -144,6 +144,18 @@ define(['jcookie'], () => {
             });
 
 
+
+            $('#count').on('input', function() {
+                let $reg = /^\d+$/g; //只能输入数字
+                let $value = $(this).val();
+                if (!$reg.test($value)) { //不是数字
+                    $(this).val(1);
+                }
+                /* $(this).parents('.goods-item').find('.b-sum strong').html(calcsingleprice($(this)));
+                calcprice(); //计算总价
+                setcookie($(this)); */
+            });
+
             //4.购物车：(商品sid、商品数量)
             //4.1设置存储cookie的变量,因为是多个商品，采用数组存储。
             let arrsid = []; //存储商品的sid
@@ -182,7 +194,7 @@ define(['jcookie'], () => {
                     arrnum[$index] = parseInt(arrnum[$index]) + parseInt($('#count').val()); //重新赋值
                     $.cookie('cookienum', arrnum, { expires: 10, path: '/' });
                 }
-                alert('按钮被点击了');
+                alert('加入成功');
             });
         }
     }

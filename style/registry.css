@@ -36,7 +36,7 @@ li {
 }
 
 #tab .tab_content {
-    padding: 10px;
+    
     height: 515px;
     background:#f7f7f7;
 }
@@ -51,8 +51,75 @@ li {
 
 #tab .tab_content .show {
     display: block;
+    float: left;
+    padding-left: 125px;
+    padding-top: 60px;
 }
 
 .footer{
     margin-top: 515px;
+}
+
+.rightbar{
+    float: right;
+    width: 328px;
+    height: 100%;
+    background-color: rgb(193,220,237);
+}
+
+.rightbar .qrcode_box {
+    padding: 20px 0 30px 0;
+}
+
+.rightbar .qrcode_box p.txt_info {
+    text-align: center;
+    color: #0e4971;
+    font-size: 14px;
+    font-family: "Microsoft Yahei",Arial, Helvetica, sans-serif;
+    margin: 10px 0;
+}
+
+.rightbar .qrcode_box .port {
+    text-align: center;
+}
+
+.rightbar .qrcode_box p.txt_info2 {
+    margin-bottom: 35px;
+}
+
+.rightbar .qrcode_box p.txt_info {
+    text-align: center;
+    color: #0e4971;
+    font-size: 14px;
+    font-family: "Microsoft Yahei",Arial, Helvetica, sans-serif;
+    margin: 10px 0;
+}
+
+
+/* 注册栏 */
+
+
+.tab_box p{
+    height: 35px;
+    margin-top: 20px;
+}
+
+.tab_box p input{
+    height: 35px;
+    width: 258px;
+    padding: 6px 30px 7px 10px ;
+    border: 1px solid #c9c8cf;
+}
+
+.tab_box legend{
+    text-align: center;
+    font-size: 40px;
+}
+
+.tab_box .submit{
+    background-color: rgb(34,156,221);
+}
+
+.tab_box p span{
+    font-size: 12px;
 }
